@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <!-- NAVBAR -->
+  <nav>
+    <div class="logo">CLINIC</div>
+    <div class="menu-btn" onclick="document.querySelector('nav ul').classList.toggle('show')">☰</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero" id="home">
+  <h1>أهلاً بكم في عيادة الماجيكوووو</h1>
+    <p>رعاية طبية متكاملة… اهتمام قبل العلاج.</p>
+    <button>احجز كشف الآن</button>
+  </div>
+
+  <!-- ABOUT -->
+
+   
+  
+
+  <!-- SERVICES -->
+  <div id="services">
+    <h2 class="title">من نحن</h2>
+    <p style="text-align:center;max-width:800px;margin:auto;line-height:1.9;">
+      عيادة الماجيكو بتقدم أفضل خدمات الرعاية الطبية على أعلى مستوى من الخبرة والدقة،
+      مع فريق متخصص هدفه الأول راحتك واهتمامه بصحتك قبل أي شيء.
+    </p>
+    <section class="serv">
+    <h2 class="title">خدماتنا</h2>
+    <div class="services">
+      <div class="card">
+        <img src="./images/OIP (1).webp" alt="">
+        <h3>كشف عام</h3>
+        <p>تشخيص دقيق ومتابعة مستمرة مع أفضل الأطباء المختصين.</p>
+      </div>
+      <div class="card">
+        <img src="./images/OIP (2).webp" alt="">
+        <h3>تحاليل طبية</h3>
+        <p>مجموعة كاملة من التحاليل بأحدث الأجهزة.</p>
+      </div>
+      <div class="card">
+        <img src="./images/OIP (3).webp" alt="">
+        <h3>استشارات أونلاين</h3>
+        <p>اسأل دكتورك اونلاين بدون ما تتنقل من مكانك.</p>
+      </div>
+    </div>
+  </div>
+  <h1 style="text-align: center  ; color:rgb(14, 78, 78); margin-top:40px">Contact Us</h1>
+  <!-- CONTACT -->
+  <div id="contact">
+ 
+    <div class="left">
+    <h2 class="title">تواصل معنا</h2>
+    <h2>العنوان: دهشور - الجيزة</h2>
+    <br>
+    <h2>الهاتف: 0123456789</h2>
+    </div>
+    <form class="right">
+        <div class="form-group">
+          <label>اسمك</label>
+          <input type="text" placeholder="اكتب اسمك" required>
+        </div>
+      
+        <div class="form-group">
+          <label>الإيميل</label>
+          <input type="email" placeholder="اكتب الإيميل" required>
+        </div>
+      
+        <div class="form-group">
+          <label>رقم الموبايل</label>
+          <input type="text" placeholder="اكتب رقمك" required>
+        </div>
+      
+        <div class="form-group">
+          <label>شرح الحالة</label>
+          <textarea placeholder="اكتب رسالتك" rows="5" required></textarea>
+        </div>
+      
+        <button type="submit" class="submit-btn">إرسال</button>
+      </form>
+      
+</div>
+
+  <footer>
+   جميع الحقوق محفوظة © 2025 من قبل الماجيكوو عمك
+  </footer>
+
+</body>
+</html>

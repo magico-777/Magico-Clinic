@@ -1,0 +1,273 @@
+*{margin:0;padding:0;box-sizing:border-box;
+    font-family: sans-serif;}
+
+body{
+    background:#f7f7f7;color:#222;
+}
+
+section {
+    scroll-margin-top: 90px; /* عدّل حسب ارتفاع الـ navbar */
+  }
+  
+/* Navbar */
+nav{
+  width:100%;
+  background:#0d6efd;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+nav .logo{
+    color:#fff;font-size:24px;font-weight:700;letter-spacing:1px;
+}
+nav ul{
+    list-style:none;display:flex;gap:25px;
+}
+nav ul li a{
+  color:rgb(252, 252, 252);
+  text-decoration:none;
+  font-size:15px;
+  font-weight:600;
+  transition:0.3s;
+}
+nav ul li a:hover{opacity:0.7;}
+
+/* Responsive Nav */
+.menu-btn{display:none;font-size:28px;color:#fff;cursor:pointer;}
+@media(max-width:768px){
+  nav ul{ 
+    position:absolute;
+    top:70px;
+    right:0;
+    background:#0d6efd;
+    width:100%;
+    flex-direction:column;
+    display:none;
+    padding:20px 0;
+  }
+  nav ul.show{display:flex;}
+  .menu-btn{display:block;}
+  #contact{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+ 
+}
+/* Responsive */
+@media(max-width:1024px){
+    .hero-content h1{font-size:38px;}
+    .cards-container{flex-direction:row;flex-wrap:wrap;}
+    .card{flex:1 1 45%;}
+  }
+  
+  @media(max-width:768px){
+    .hero{height:60vh;}
+    .hero-content h1{font-size:30px;}
+    .cards-container{flex-direction:column;}
+    .card{flex:1 1 100%;}
+    .about-box{flex-direction:column;text-align:center;}
+    .about-img{width:100%;}
+  }
+  
+  @media(max-width:480px){
+    .hero-content h1{font-size:24px;}
+    .section{padding:50px 20px;}
+    input{
+        width: 50px;
+      }
+  }
+  
+
+/* Hero */
+.hero{
+  width:100%;
+  padding:90px 20px;
+  background:url(./images/20378251.jpg) center/cover;
+  height: 700px;
+  color:rgb(31, 0, 167);
+  text-align:center;
+}
+.hero h1{font-size:40px;margin-bottom:20px;}
+.hero p{font-size:18px;margin-bottom:25px;}
+.hero button{
+  padding:12px 30px;
+  border:none;
+  background:rgb(4, 80, 221);
+  color:#fde50d;
+  font-size:16px;
+  font-weight:700 bold;
+  border-radius:50px;
+  cursor:pointer;
+  transition:0.3s;
+}
+.hero button:hover{transform:scale(1.05);}
+
+/* Sections */
+section{padding:60px 20px;max-width:1100px;margin:auto;}
+.title{font-size:30px;
+    font-weight:700;margin-bottom:35px;text-align:center;}
+
+.services{display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:25px;}
+.card{
+  padding:25px;
+  background:#fff;
+  border-radius:15px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+.card:hover{transform:translateY(-5px);}
+.card h3{margin-bottom:10px;}
+.card p{line-height:1.7;}
+
+footer{
+  background:#8e97a3;
+  padding:25px;
+  text-align:center;
+  color:#fff;
+  margin-top:50px;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+#contact{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 40px;
+ 
+
+}
+form input,textarea{
+ width: 500px;
+ padding: 10px;
+
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0a7cff;
+  box-shadow: 0 0 5px rgba(0, 140, 255, 0.3);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #0a7cff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #056ad6;
+}
+
+
+footer{
+    color:#0a7cff;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
+    font-size: medium;
+}
+
+
+
+
+/* Form Responsive */
+
+/* تابلت */
+@media(max-width:1024px){
+    #contact {
+      max-width:450px;
+      padding:20px;
+    }
+    #contact input,
+    #contact textarea {
+      font-size:14px;
+      padding:10px;
+    }
+    #contact button {
+      font-size:15px;
+      padding:10px;
+    }
+  }
+  
+  /* موبايل */
+  @media(max-width:768px){
+    #contact {
+      max-width:100%;
+      padding:15px;
+    }
+    #contact input,
+    #contact textarea {
+      font-size:13px;
+      padding:10px;
+      width: 240px;
+    }
+    #contact button {
+      font-size:14px;
+      padding:10px;
+    }
+  }
+  
+  /* موبايل صغير جدًا */
+  @media(max-width:480px){
+    #contact {
+      padding:10px;
+    }
+    #contact input,
+    #contact textarea {
+      font-size:12px;
+      padding:6px;
+    }
+    #contact button {
+      font-size:13px;
+      padding:8px;
+    }
+  }
+  
